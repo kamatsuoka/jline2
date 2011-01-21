@@ -26,6 +26,7 @@ class JlineProject(info: ProjectInfo) extends DefaultProject(info) with Proguard
   }
 
   override def proguardOptions = List(
+    "-dontshrink",
     "-keep class *",
     "-keepdirectories"
   )
